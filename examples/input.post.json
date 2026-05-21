@@ -1,0 +1,18 @@
+{
+  "mode": "post",
+  "groupUrl": "https://www.skool.com/your-group",
+  "cookies": [
+    {
+      "name": "_skool_session",
+      "value": "YOUR_SESSION_COOKIE",
+      "domain": ".skool.com",
+      "path": "/",
+      "httpOnly": true,
+      "secure": true
+    }
+  ],
+  "postId": "abc123",
+  "parentId": "optional-parent-comment-id",
+  "replyContent": "Thanks for the post — great point!",
+  "webhookUrl": "https://connect.pabbly.com/workflow/sendwebhookdata/IXXXXXXX"
+}

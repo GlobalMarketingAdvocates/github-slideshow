@@ -1,0 +1,18 @@
+{
+  "mode": "scan",
+  "groupUrl": "https://www.skool.com/your-group",
+  "scannedAt": "2026-05-21T00:00:00.000Z",
+  "totalNewEvents": 2,
+  "events": [
+    {
+      "type": "new_post",
+      "postId": "post_123",
+      "commentId": null,
+      "author": "John Doe",
+      "text": "Welcome @jane_doe to the group!",
+      "timestamp": "2026-05-21T00:00:00.000Z",
+      "url": "https://www.skool.com/your-group/post/post_123",
+      "mentions": ["jane_doe"]
+    }
+  ]
+}

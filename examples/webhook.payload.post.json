@@ -1,0 +1,9 @@
+{
+  "mode": "post",
+  "ok": true,
+  "groupUrl": "https://www.skool.com/your-group",
+  "postId": "abc123",
+  "parentId": "optional-parent-comment-id",
+  "replyContent": "Thanks for the post — great point!",
+  "postedAt": "2026-05-21T00:00:00.000Z"
+}
