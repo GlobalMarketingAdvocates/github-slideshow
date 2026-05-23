@@ -1,0 +1,87 @@
+{
+  "title": "Engagement Blitz Skool Scanner/Poster Input",
+  "type": "object",
+  "version": 1,
+  "schemaVersion": 1,
+  "properties": {
+    "groupUrl": {
+      "title": "Skool Group URL",
+      "type": "string",
+      "description": "Full URL of the Skool group feed page.",
+      "editor": "textfield"
+    },
+    "cookies": {
+      "title": "Session Cookies",
+      "type": "array",
+      "description": "Array of Playwright cookie objects for authenticated Skool access.",
+      "editor": "json",
+      "prefill": [
+        {
+          "name": "_skool_session",
+          "value": "YOUR_SESSION_COOKIE",
+          "domain": ".skool.com",
+          "path": "/",
+          "httpOnly": true,
+          "secure": true
+        }
+      ]
+    },
+    "targetUsername": {
+      "title": "Target Username",
+      "type": "string",
+      "description": "Username to detect in mentions (without @ is fine).",
+      "editor": "textfield"
+    },
+    "maxPostsToCheck": {
+      "title": "Max Posts To Check",
+      "type": "integer",
+      "description": "Number of newest posts to inspect.",
+      "default": 8,
+      "minimum": 1,
+      "maximum": 20
+    },
+    "scanMentionsOnly": {
+      "title": "Scan Mentions Only",
+      "type": "boolean",
+      "default": false
+    },
+    "scanComments": {
+      "title": "Scan Comments",
+      "type": "boolean",
+      "default": true
+    },
+    "scanBlitzTab": {
+      "title": "Scan Blitz Tab/Category",
+      "type": "boolean",
+      "default": false
+    },
+    "webhookUrl": {
+      "title": "Webhook URL",
+      "type": "string",
+      "description": "Pabbly webhook endpoint for outgoing JSON.",
+      "editor": "textfield"
+    },
+    "mode": {
+      "title": "Mode",
+      "type": "string",
+      "enum": ["scan", "post"],
+      "default": "scan"
+    },
+    "replyContent": {
+      "title": "Reply Content",
+      "type": "string",
+      "description": "Comment text to post when mode=post."
+    },
+    "postId": {
+      "title": "Post ID",
+      "type": "string",
+      "description": "Target post ID when mode=post."
+    },
+    "parentId": {
+      "title": "Parent ID",
+      "type": "string",
+      "description": "Optional parent comment ID for threaded replies."
+    }
+  },
+  "required": ["groupUrl", "cookies", "mode"]
+}

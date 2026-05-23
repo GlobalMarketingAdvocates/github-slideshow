@@ -1,0 +1,20 @@
+{
+  "mode": "scan",
+  "groupUrl": "https://www.skool.com/your-group",
+  "cookies": [
+    {
+      "name": "_skool_session",
+      "value": "YOUR_SESSION_COOKIE",
+      "domain": ".skool.com",
+      "path": "/",
+      "httpOnly": true,
+      "secure": true
+    }
+  ],
+  "targetUsername": "jane_doe",
+  "maxPostsToCheck": 8,
+  "scanMentionsOnly": false,
+  "scanComments": true,
+  "scanBlitzTab": false,
+  "webhookUrl": "https://connect.pabbly.com/workflow/sendwebhookdata/IXXXXXXX"
+}
