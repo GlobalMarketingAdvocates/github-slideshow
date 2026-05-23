@@ -77,3 +77,7 @@ npm start
 - Keep `maxPostsToCheck` between **5 and 10** for cheapest runs.
 - Cookie freshness is critical; expired session cookies will fail authentication.
 - Skool DOM can change; selectors in `src/main.js` are intentionally flexible but may need updates over time.
+## License
+
+Proprietary - All rights reserved. No permission is granted to use, copy, modify, or distribute this code without explicit written permission from the owner. See `LICENSE`.
+
